@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+rescored.jsonl
+.DS_Store

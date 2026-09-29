@@ -1,0 +1,18 @@
+{
+  "system": "Jelly v1 (published)",
+  "split": "BEAM 100K (20 conversations, 400 questions)",
+  "questions": 400,
+  "overall": 87.57,
+  "by_category": {
+    "abstention": 98.75,
+    "contradiction_resolution": 73.75,
+    "event_ordering": 100.0,
+    "information_extraction": 84.69,
+    "instruction_following": 90.0,
+    "knowledge_update": 75.62,
+    "multi_session_reasoning": 61.09,
+    "preference_following": 98.75,
+    "summarization": 96.82,
+    "temporal_reasoning": 96.25
+  }
+}
