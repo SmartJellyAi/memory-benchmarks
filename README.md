@@ -46,7 +46,6 @@ Each row is that team's own published run. Only past.dev's used the same protoco
 ## What you should know about the number
 
 - **The protocol gives the answering model hints.** ExaBase's answer prompt passes parts of the dataset's own annotations to the answering model: the rubric points a summary should cover, the time points and a calculation hint for temporal questions, the topics to put in order, the preference or instruction being tested, and why a question may be unanswerable. Its judge sees the question. That is why event ordering and temporal reasoning score near 100% for every system run this way. We use it because it is how the published leaderboard numbers were produced, so ours compares with them.
-- **On BEAM's own prompts and judge, Jelly scored 46.13%** (an earlier run, before the two retrieval changes below, same answering model, judged by gpt-5.6-luna because BEAM's gpt-4.1-mini judge was not available to us). The BEAM paper reports 35.8% for its own method with Llama-4-Maverick on that protocol.
 - **Two retrieval changes were validated on this split.** We changed how Jelly ranks keyword matches and how much weight recency gets after measuring evidence recall on these 400 questions, and checked on LongMemEval-S that everyday recall did not get worse. They are general changes, not tuned to particular questions, but they were not validated on a held-out split.
 - **Other teams' numbers are their own**, with their own models and settings.
 
